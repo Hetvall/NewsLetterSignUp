@@ -5,56 +5,68 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <script src="./index.js"></script>
+  <!-- Sass -->
   <link rel="stylesheet" href="sass/style.css">
+  <!-- JS -->
+  <script src="index.js" defer></script>
+  <!-- Fonts -->
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
   </style>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
-  </style>
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
-
 </head>
 
 <body>
-  <section class="container">
-    <div class="content">
-      <h1>Stay updated!</h1>
+  <!-- Main section -->
+  <main>
+    <section class="container">
+      <div class="content">
 
-      <label>Join 60,000+ product managers receiving monthly updates on:</label>
-      <ul>
-        <li>Product discovery and building what matters</li>
-        <li> Measuring to ensure updates are a success</li>
-        <li>And much more!</li>
-      </ul>
-      <legend for="email">Email address</label>
-        <input class="emailInput" type="email" placeholder="email@company.com">
+        <header>
+          <h1 class="title">Stay updated!</h1>
+        </header>
 
-        <button>Subscribe to monthly newsletter</button>
+        <label class="text-description">Join 60,000+ product managers receiving monthly updates on:</label>
+
+        <ul>
+          <li><img src="assets/images/icon-list.svg" class="icon-list" alt="icon list">Product discovery and building
+            what
+            matters</li>
+          <li><img src="assets/images/icon-list.svg" class="icon-list" alt="icon list"> Measuring to ensure updates are
+            a
+            success</li>
+          <li><img src="assets/images/icon-list.svg" class="icon-list" alt="icon list">And much more!</li>
+        </ul>
+
+        <div class="email-labels">
+          <label for="email" class="email-label">Email address</label>
+          <label class="email-error"></label>
+        </div>
+
+        <input class="email-input" type="email" placeholder="email@company.com">
+
+        <button class="suscribe-button">Subscribe to monthly newsletter</button>
+      </div>
+
+      <div class="desktop-image">
+        <img src="assets/images/illustration-sign-up-desktop.svg" alt="illustration-sign-up-desktop">
+      </div>
+    </section>
+  </main>
+
+  <!-- Confirmation section -->
+  <section class="confirmation hide">
+    <div class="confirmation-content">
+      <img src="assets/images/icon-success.svg" class="sign-up-sucess" alt="illustration-sign-up-sucess">
+
+      <h1 class="thanks-title">Thanks for subscribing!</h1>
+      <h2>A confirmation email has been sent to <span class="bold-word">ash@loremcompany.com.</span>
+        Please open it and click the button inside to confirm your subscription</h2>
+
+      <button class="dismiss-button">Dismiss message</button>
     </div>
-
-    <div class="desktop-image">
-      <img src="assets/images/illustration-sign-up-desktop.svg" alt="illustration-sign-up-desktop">
-    </div>
-
   </section>
 
-
-  <!-- <section class="confirmation">
-    <h1>Thanks for subscribing!</h1>
-
-    <h2>A confirmation email has been sent to ash@loremcompany.com.
-      Please open it and click the button inside to confirm your subscription.</h2>
-
-    <button>Dismiss message</button>
-  </section> -->
-
-  <!-- 
-  <div class="attribution">
-    <footer> Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">James Orozco</a>.</footer>
-  </div> -->
 </body>
 
 </html>
